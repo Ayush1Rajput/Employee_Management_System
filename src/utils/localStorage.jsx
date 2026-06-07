@@ -35,7 +35,7 @@ const employees = [
         taskDescription: "Configure Tailwind CSS in project.",
         taskDate: "2026-06-05",
         category: "Development",
-      }
+      },
     ],
 
     taskCounts: {
@@ -81,7 +81,7 @@ const employees = [
         taskDescription: "Integrate Razorpay payment gateway.",
         taskDate: "2026-06-02",
         category: "Backend",
-      }
+      },
     ],
 
     taskCounts: {
@@ -127,7 +127,7 @@ const employees = [
         taskDescription: "Setup MongoDB collections.",
         taskDate: "2026-06-01",
         category: "Database",
-      }
+      },
     ],
 
     taskCounts: {
@@ -173,7 +173,7 @@ const employees = [
         taskDescription: "Deploy application on Vercel.",
         taskDate: "2026-06-07",
         category: "DevOps",
-      }
+      },
     ],
 
     taskCounts: {
@@ -219,7 +219,7 @@ const employees = [
         taskDescription: "Prepare project documentation.",
         taskDate: "2026-06-03",
         category: "Documentation",
-      }
+      },
     ],
 
     taskCounts: {
@@ -257,7 +257,7 @@ const admin = [
         taskDescription: "Prepare monthly performance report.",
         taskDate: "2026-06-05",
         category: "Reporting",
-      }
+      },
     ],
 
     taskCounts: {
@@ -266,21 +266,18 @@ const admin = [
       completed: 1,
       failed: 0,
     },
-  }
+  },
 ];
 
 export const setLocalStorage = () => {
-    localStorage.setItem('employees',JSON.stringify(employees));
-    localStorage.setItem('admin',JSON.stringify(admin));
-
+  localStorage.setItem("employees", JSON.stringify(employees));
+  localStorage.setItem("admin", JSON.stringify(admin));
 };
 
 export const getLocalStorage = () => {
-  const employees = localStorage.getItem('employees');
-  const admin = localStorage.getItem('admin');
+  const employees = localStorage.getItem("employees");
+  const admin = localStorage.getItem("admin");
 
   console.log(JSON.parse(employees));
   console.log(JSON.parse(admin));
-
-
 };

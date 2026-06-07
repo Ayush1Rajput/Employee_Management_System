@@ -9,6 +9,3 @@ body{
 #tasklist::-webkit-scrollbar{
   display: none;
 }
-input ,textarea{
-  background-color: white;
-}
